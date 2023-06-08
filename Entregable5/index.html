@@ -15,6 +15,66 @@
             width: 204px;
             height: 37px;
         }
+        .nav{
+            padding-left: 1600px;
+        }
+        /* contenedor grid */
+        .letrasEDC{
+            display: grid;
+            grid-template-columns: auto;
+            color: white;
+            padding-left: 70px;
+            width: 40%;
+            height: 60%;
+        }
+        #uno{
+            grid-column: 1/4;
+            grid-row: 1/2;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #dos{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: right;
+        }
+        #tres{
+            grid-column: 3/4;
+            grid-row: 2/4;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        #cuatro{
+            grid-column: 3/4;
+            grid-row: 4/5;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        main{
+            background-color: blueviolet; 
+            color: white;
+            display: flex;
+            background-repeat: no-repeat;
+            background-image:url(https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg);
+            background-size: cover;
+            height: 340px;
+            width: 100%;
+            padding-left: 150px;
+            padding-top: 80px;
+        }
+        #vector{
+            width: 40px;
+            height: 50px;
+        }
+        footer{
+            text-align: center;
+        }
+        #color{
+            color: darkgoldenrod;
+            font-size: 25px;
+        }
     </style>
 </head>
 <body>
@@ -22,29 +82,29 @@
         <div class="logoCDMX">
             <img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/assets/images/logo.svg" alt="">
         </div>
-        <nav>
+        <nav class="nav">
             <a href="Residentes">Residentes</a>
             <a href="Negocios">Negocios</a>
             <a href="Visitantes">Visitantes</a>
             <a href="Gobierno">Gobierno</a>
         </nav>
     </header>
-    <main style="background-color: blueviolet; color: white;">
-        <img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg" alt="">
-        <div>
-            <span>
-                <h3> APRENDE A PROGRAMAR</h3>
-            </span>
-            <span>
-                <h2>EN LAS</h2>
-            </span>
-            <span>
-                <h1>ESCUELAS DE CODIGO</h1>
-            </span>
-            <span>
-                <h2>DE LA CDMX</h2>
-            </span>
+    <main>
+        <img id="vector" src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg" alt="">
+        <div class="letrasEDC">
+            <span id="uno">APRENDE A PROGRAMAR</span>
+            <span id="dos">EN LAS</span>
+            <span id="tres">ESCUELAS <br>DE CÓDIGO</span>
+            <span id="cuatro">DE LA CDMX</span>
         </div>
     </main>
+    <footer>
+        
+        <p> 
+            <b id="color">¿Quien se puede inscribir?</b><br>
+            <b>Cualquier persona que quiera puede aprender a programar codigo y cuente con 4-8 horas disponibles a la semana</b><br>
+            Menores de edad deberan entrar a las instalaciones acompañados de un adulto
+        </p>
+    </footer>
 </body>
 </html>
