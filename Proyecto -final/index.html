@@ -7,46 +7,121 @@
     <title>Document</title>
     <style>
         .logoMaya img{
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .logoMaya a{
+            margin: 0px 20px;
+            color: black;
+        }
+
+        .cajas{
+            background-color: #D40032;
+            color: white;
+            display: flex;
+            text-align: center;
+            height: 30%;
+            width: 100%;
+            margin-bottom: 20px;
+            line-height:65px;
+        }
+
+        .cajas a{
+            color: white;
+        }
+
+        .cajas img{
+            width: 50%;
+        }
+
+        .cajas div{
+            width: 50%;
+            font-size: xx-large;
+            
+        }
+
+        .caja-verde{
+            background-color: #016241;
+            text-align: center;
+            display: block;
+            font-size: xx-large;
+            letter-spacing:2px;
+            line-height:70px;
+        }
+
+        button {
+            border: solid 2px black;
+            border-radius: 50px;
+            padding: 7px 15px;
+        }
+
+        .boton-blanco{
+            background-color: white;
+            color: black;
+            margin: 0px 5px;
+        }
+
+        .boton-rojo{
+            background-color: #D40032;
+            color: white;
+            border-color: white;
+        }
+
+        .boton-blanco:hover{
+            background-color:black ;
+            color: white;
+        }
+
+        .boton-rojo:hover{
+            background-color:white ;
+            color: #D40032;
+            border-color: #D40032;
+        }
+
+        .div-botones{
+            padding-top: 20px;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logoMaya">
-            <nav>
-                <img src="pngwing.com.png" alt="">
-                <a href="#ARTE"><b>ARTE</b></a>
-                <a href="#COLECCIONES"><b>COLECCIONES</b></a>
-                <a href="#CONOCENOS"><b>CONOCENOS</b></a>
-            </nav>
-            <div>
-                <button>Registrate</button>
-                <button>Inicia sesion</button>
-            </div>
+        <nav class="logoMaya">
+            <img src="pngwing.com.png" alt="">
+            <a href="#ARTE"><b>ARTE</b></a>
+            <a href="#COLECCIONES"><b>COLECCIONES</b></a>
+            <a href="#CONOCENOS"><b>CONOCENOS</b></a>
+        </nav>
+        <div class="div-botones">
+            <button class="boton-blanco">Registrate</button>
+            <button class="boton-blanco">Inicia sesion</button>
         </div>
     </header>
-    <main>
-        <article>
-            <p>UNA EXPERIENCIA <br>TOTALMENTE NUEVA <br>EN EL ARTE</p>
+    <main >
+        <article class="cajas caja-verde">
+            <h1>UNA EXPERIENCIA <br>TOTALMENTE NUEVA <br>EN EL ARTE</h1>
             <p>Una tradicion milenaria nos ha acompañado a traves de todo <br>este tiempo. <a href="Aprende mas...">Aprende mas...</a></p>
         </article>
-        <aside>
-            <img src="alebrijes-en-oaxaca-940x626.jpg" alt="">
+        <aside class="cajas">
+            <img  src="alebrijes-en-oaxaca-940x626.jpg" alt="">
             <div>
-                <p>ALEBRIJES <br>MEXICANOS</p>
-                <p>Tallados en madera cumplen con las mas altas exigencias en diseño</p>
-                <button>HAS TU PEDIDO</button>
+                <h1>ALEBRIJES <br>MEXICANOS</h1>
+                <p>Tallados en madera cumplen con las mas <br>altas exigencias en diseño</p>
+                <button  class="boton-rojo">HAS TU PEDIDO</button>
             </div>
         </aside>
-        <section>
+        <section class="cajas">
             <div>
-                <p>CREATIVIDAD E <br>IMAGINACION</p>
+                <h1>CREATIVIDAD E <br>IMAGINACION</h1>
                 <p>Un sueño hecho realidad.</p>
-                <button>HAS TU PEDIDO</button>
+                <button class="boton-rojo" >HAS TU PEDIDO</button>
             </div>
-            <img src="NOMADAS-1.jpg" alt="">
+            <img class="imagenes" src="NOMADAS-1.jpg" alt="">
         </section>
     </main>
     <footer>
@@ -58,7 +133,7 @@
             <a href=""><img src="icons8-youtube-play-30.png" alt=""></a>
             <a href=""><img src="icons8-twitter-30.png" alt=""></a>
         </nav>
-        <p>2023 Todos los derechos reservados al arte popular</p>
+        <b>2023 Todos los derechos reservados al arte popular</b>
     </footer>
 </body>
 </html>
